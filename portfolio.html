@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Bordados personalizados feitos com cuidado em cada detalhe.">
+  <title>A Arte de Borda | Portfólio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Estilo para garantir que os vídeos fiquem idênticos às fotos no grid */
+    .portfolio-item video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: inherit;
+    }
+
+    /* Estilos da descrição do Portfólio */
+    .portfolio-intro {
+      max-width: 900px;
+      margin: 0 auto 50px auto;
+      text-align: left;
+    }
+
+    .portfolio-intro p {
+      font-size: 1.05rem;
+      color: #4a4a4a;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .portfolio-services {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 12px;
+      border-left: 4px solid #5bb1cd;
+      margin-top: 25px;
+    }
+
+    .portfolio-services h3 {
+      font-size: 1.2rem;
+      color: #2b2b2b;
+      margin-bottom: 15px;
+    }
+
+    .portfolio-services ul {
+      list-style: none;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+    }
+
+    .portfolio-services li {
+      position: relative;
+      padding-left: 25px;
+      font-size: 0.98rem;
+      color: #333;
+    }
+
+    .portfolio-services li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #5bb1cd;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html">
+        <img src="images/Logo.jpg" alt="A Arte de Borda">
+      </a>
+      <button class="menu-toggle">☰</button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a class="" href="index.html">Início</a></li>
+          <li><a class="" href="sobre.html">Sobre</a></li>
+          <li><a class="active" href="portfolio.html">Portfólio</a></li>
+          <li><a class="" href="duvidas.html">Dúvidas</a></li>
+          <li><a class="" href="contato.html">Contato</a></li>
+          <li><a class="btn btn-primary" href="contato.html">Solicitar orçamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Portfólio</span>
+        <h1>Trabalhos feitos para cada história</h1>
+        <p>Confira uma seleção dos bordados personalizados realizados pela A Arte de Borda.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Texto explicativo e lista de serviços -->
+        <div class="portfolio-intro reveal">
+          <p>A empresa <strong>A Arte de Borda</strong> conta com uma equipe de profissionais especializados e altamente capacitados para desenvolverem um trabalho exclusivo na conversão de arquivos/logotipos de sua empresa, bem como para efetuar o bordado computadorizado em vossas peças.</p>
+          <p>Conheça aqui alguns serviços que prestamos e consulte-nos para projetos mais específicos. A Arte de Borda oferece solução sob medida para sua necessidade.</p>
+
+          <div class="portfolio-services">
+            <h3>Nossos Serviços & Soluções:</h3>
+            <ul>
+              <li>Desenvolvimento de logotipos</li>
+              <li>Encomendas tradicionais e customizadas</li>
+              <li>Bordado em bonés, capas de notebook, toalhas, mochilas, uniformes, enxovais</li>
+              <li>Bordados personalizados para datas comemorativas: bodas, batizados, casamentos, etc.</li>
+              <li>Cadastro de logomarcas para facilitar trabalhos futuros</li>
+              <li>Qualidade e agilidade na entrega</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Grid de Fotos e Vídeos -->
+        <div class="portfolio-grid">
+          <!-- Item 01 (Foto 1 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f1.png" alt="Bordado personalizado f1" loading="lazy"></div>
+          <!-- Item 02 (Foto 2 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f2.png" alt="Bordado personalizado f2" loading="lazy"></div>
+          <!-- Item 03 (VÍDEO 1) -->
+          <div class="portfolio-item reveal">
+            <video autoplay loop muted playsinline poster="images/f3.png">
+              <source src="images/v1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Item 04 (Foto 3 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f3.png" alt="Bordado personalizado f3" loading="lazy"></div>
+          <!-- Item 05 (Foto 4 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f4.png" alt="Bordado personalizado f4" loading="lazy"></div>
+          <!-- Item 06 (Foto 5 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f5.png" alt="Bordado personalizado f5" loading="lazy"></div>
+          <!-- Item 07 (Foto 6 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f6.png" alt="Bordado personalizado f6" loading="lazy"></div>
+          <!-- Item 08 (Foto 7 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f7.png" alt="Bordado personalizado f7" loading="lazy"></div>
+          <!-- Item 09 (Foto 8 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f8.png" alt="Bordado personalizado f8" loading="lazy"></div>
+          <!-- Item 10 (VÍDEO 2) -->
+          <div class="portfolio-item reveal">
+            <video autoplay loop muted playsinline poster="images/f9.png">
+              <source src="images/v2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Item 11 (Foto 9 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f9.png" alt="Bordado personalizado f9" loading="lazy"></div>
+          <!-- Item 12 (Foto 10 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f10.png" alt="Bordado personalizado f10" loading="lazy"></div>
+          <!-- Item 13 (Foto 11 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f11.png" alt="Bordado personalizado f11" loading="lazy"></div>
+          <!-- Item 14 (Foto 12 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f12.png" alt="Bordado personalizado f12" loading="lazy"></div>
+          <!-- Item 15 (Foto 13 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f13.png" alt="Bordado personalizado f13" loading="lazy"></div>
+          <!-- Item 16 (Foto 14 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f14.png" alt="Bordado personalizado f14" loading="lazy"></div>
+          <!-- Item 17 (Foto 15 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f15.png" alt="Bordado personalizado f15" loading="lazy"></div>
+          <!-- Item 18 (VÍDEO 3) -->
+          <div class="portfolio-item reveal">
+            <video autoplay loop muted playsinline poster="images/f16.png">
+              <source src="images/v3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Item 19 (Foto 16 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f16.png" alt="Bordado personalizado f16" loading="lazy"></div>
+          <!-- Item 20 (Foto 17 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f17.png" alt="Bordado personalizado f17" loading="lazy"></div>
+          <!-- Item 21 (Foto 18 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f18.png" alt="Bordado personalizado f18" loading="lazy"></div>
+          <!-- Item 22 (Foto 19 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f19.png" alt="Bordado personalizado f19" loading="lazy"></div>
+          <!-- Item 23 (Foto 20 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f20.png" alt="Bordado personalizado f20" loading="lazy"></div>
+          <!-- Item 24 (Foto 21 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f21.png" alt="Bordado personalizado f21" loading="lazy"></div>
+          <!-- Item 25 (Foto 22 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f22.png" alt="Bordado personalizado f22" loading="lazy"></div>
+          <!-- Item 26 (Foto 23 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f23.png" alt="Bordado personalizado f23" loading="lazy"></div>
+          <!-- Item 27 (VÍDEO 4) -->
+          <div class="portfolio-item reveal">
+            <video autoplay loop muted playsinline poster="images/f24.png">
+              <source src="images/v4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Item 28 (Foto 24 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f24.png" alt="Bordado personalizado f24" loading="lazy"></div>
+          <!-- Item 29 (Foto 25 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f25.png" alt="Bordado personalizado f25" loading="lazy"></div>
+          <!-- Item 30 (Foto 26 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f26.png" alt="Bordado personalizado f26" loading="lazy"></div>
+          <!-- Item 31 (Foto 27 - JPG) -->
+          <div class="portfolio-item reveal"><img src="images/f27.jpg" alt="Bordado personalizado f27" loading="lazy"></div>
+          <!-- Item 32 (Foto 28 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f28.png" alt="Bordado personalizado f28" loading="lazy"></div>
+          <!-- Item 33 (Foto 29 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f29.png" alt="Bordado personalizado f29" loading="lazy"></div>
+          <!-- Item 34 (Foto 30 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f30.png" alt="Bordado personalizado f30" loading="lazy"></div>
+          <!-- Item 35 (VÍDEO 5) -->
+          <div class="portfolio-item reveal">
+            <video autoplay loop muted playsinline poster="images/f31.png">
+              <source src="images/v5.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Item 36 (Foto 31 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f31.png" alt="Bordado personalizado f31" loading="lazy"></div>
+          <!-- Item 37 (Foto 32 - JPG) -->
+          <div class="portfolio-item reveal"><img src="images/f32.jpg" alt="Bordado personalizado f32" loading="lazy"></div>
+          <!-- Item 38 (Foto 33 - JPG) -->
+          <div class="portfolio-item reveal"><img src="images/f33.jpg" alt="Bordado personalizado f33" loading="lazy"></div>
+          <!-- Item 39 (Foto 34 - JPG) -->
+          <div class="portfolio-item reveal"><img src="images/f34.jpg" alt="Bordado personalizado f34" loading="lazy"></div>
+          <!-- Item 40 (Foto 35 - JPG) -->
+          <div class="portfolio-item reveal"><img src="images/f35.jpg" alt="Bordado personalizado f35" loading="lazy"></div>
+          <!-- Item 41 (Foto 36 - JPG) -->
+          <div class="portfolio-item reveal"><img src="images/f36.jpg" alt="Bordado personalizado f36" loading="lazy"></div>
+          <!-- Item 42 (Foto 37 - JPG) -->
+          <div class="portfolio-item reveal"><img src="images/f37.jpg" alt="Bordado personalizado f37" loading="lazy"></div>
+          <!-- Item 43 (VÍDEO 6) -->
+          <div class="portfolio-item reveal">
+            <video autoplay loop muted playsinline poster="images/f38.jpg">
+              <source src="images/v6.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Item 44 (Foto 38 - JPG) -->
+          <div class="portfolio-item reveal"><img src="images/f38.jpg" alt="Bordado personalizado f38" loading="lazy"></div>
+          <!-- Item 45 (Foto 39 - JPG) -->
+          <div class="portfolio-item reveal"><img src="images/f39.jpg" alt="Bordado personalizado f39" loading="lazy"></div>
+          <!-- Item 46 (Foto 40 - JPG) -->
+          <div class="portfolio-item reveal"><img src="images/f40.jpg" alt="Bordado personalizado f40" loading="lazy"></div>
+          <!-- Item 47 (Foto 41 - JPG) -->
+          <div class="portfolio-item reveal"><img src="images/f41.jpg" alt="Bordado personalizado f41" loading="lazy"></div>
+          <!-- Item 48 (Foto 42 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f42.png" alt="Bordado personalizado f42" loading="lazy"></div>
+          <!-- Item 49 (Foto 43 - PNG) -->
+          <div class="portfolio-item reveal"><img src="images/f43.png" alt="Bordado personalizado f43" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">A Arte de Borda</div>
+          <p class="footer-text">Bordados personalizados feitos com cuidado em cada detalhe.</p>
+        </div>
+        <div>
+          <div class="footer-title">Navegação</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="duvidas.html">Dúvidas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">Contato</div>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/qr/4AI5QYM6GJARD1" target="_blank">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/_aartedeborda/" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 — A Arte de Borda. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+  <a class="floating-whatsapp" href="https://wa.me/qr/4AI5QYM6GJARD1" target="_blank">✆</a>
+  <script src="js/main.js"></script>
+</body>
+</html>

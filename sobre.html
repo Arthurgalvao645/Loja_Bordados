@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Bordados personalizados feitos com cuidado em cada detalhe.">
+  <title>A Arte de Borda | Sobre</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Estilos para os cards de Missão, Visão e Valores */
+    .mvv-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .valores-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .mvv-card, .valor-card {
+      background: #ffffff;
+      padding: 35px 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid #f0f0f0;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .mvv-card:hover, .valor-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-icon {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+
+    .mvv-card h3, .valor-card h3 {
+      font-size: 1.3rem;
+      color: #2b2b2b;
+      margin-bottom: 12px;
+    }
+
+    .mvv-card p, .valor-card p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .image-card video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: inherit;
+    }
+
+    @media (max-width: 992px) {
+      .valores-grid {
+        grid-template-columns: 1fr;
+      }
+      .mvv-grid {
+        grid-template-columns: 1fr;
+      }
+      .empty-cell {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html">
+        <img src="images/Logo.jpg" alt="A Arte de Borda">
+      </a>
+      <button class="menu-toggle">☰</button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a class="" href="index.html">Início</a></li>
+          <li><a class="active" href="sobre.html">Sobre</a></li>
+          <li><a class="" href="portfolio.html">Portfólio</a></li>
+          <li><a class="" href="duvidas.html">Dúvidas</a></li>
+          <li><a class="" href="contato.html">Contato</a></li>
+          <li><a class="btn btn-primary" href="contato.html">Solicitar orçamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="eyebrow">Sobre nós</span>
+        <h1>Feito para você, pensado em cada detalhe.</h1>
+        <p>Uma história que começou com a visão empreendedora de transformar peças em trabalhos únicos e personalizados.</p>
+      </div>
+    </section>
+
+    <!-- História e Processo -->
+    <section class="section">
+      <div class="container two-columns">
+        <div class="image-card reveal">
+          <video autoplay loop muted playsinline>
+            <source src="images/1sobre.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="content-block reveal">
+          <span class="eyebrow">Nossa história</span>
+          <h2>Cada peça tem uma história. A nossa também está sendo bordada.</h2>
+          <p>Fundada por Sara Isabel, empreendedora com um olhar atento à estética, ao cuidado e à excelência no atendimento, a A Arte de Borda nasceu do desejo de criar produtos afetuosos com acabamento impecável.</p>
+          <p>Somos uma empresa comprometida com nossos clientes e com a qualidade dos trabalhos que fazemos para eles. Não é apenas serviço. É também um olhar criterioso sobre cada peça bordada e cada logomarca desenvolvida, buscando sempre o melhor resultado.</p>
+          <p>Trabalhamos para pequenas, médias e grandes empresas, e para cada uma delas temos soluções e prazos sob medida.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Propósito -->
+    <section class="section section-alt">
+      <div class="container two-columns">
+        <div class="content-block reveal">
+          <span class="eyebrow">Nosso propósito</span>
+          <h2>Personalização, cuidado e atenção aos detalhes.</h2>
+          <p>A A Arte de Borda acompanha constantemente a evolução e modernização dos equipamentos, bem como a tecnologia utilizada em nossa atividade, para que hoje pudéssemos oferecer o melhor para você e sua marca, tanto na qualidade como no atendimento especializado.</p>
+          <p>Durante este período profissional, nossa gestão amadureceu suficientemente suas experiências e conhecimentos para compreender o que o cliente espera de seu fornecedor. Após profundos estudos referente ao negócio, estivemos convictos, confiantes e dispostos a trabalhar para oferecer serviço, produto, qualidade, pontualidade e respeito ao cliente, com um diferencial de comprometimento, através da empresa A Arte de Borda.</p>
+        </div>
+        <div class="image-card reveal">
+          <video autoplay loop muted playsinline>
+            <source src="images/2sobre.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Missão e Visão -->
+    <section class="section">
+      <div class="container">
+        <div class="mvv-grid">
+          <div class="mvv-card reveal">
+            <span class="card-icon">🎯</span>
+            <h3>Nossa Missão</h3>
+            <p>Transformar ideias em realidade através de bordados personalizados de alta qualidade, oferecendo soluções afetuosas e dedicadas que superem as expectativas de cada cliente, sempre com pontualidade e atenção individualizada.</p>
+          </div>
+          <div class="mvv-card reveal">
+            <span class="card-icon">🎖</span>
+            <h3>Nossa Visão</h3>
+            <p>Ser reconhecida como referência em bordados personalizados e peças afetivas, expandindo nossa presença com excelência artesanal, inovação nos acabamentos e relacionamento próximo com cada cliente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nossos Valores -->
+    <section class="section section-alt">
+      <div class="container">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto;" class="reveal">
+          <h2>Nossos Valores</h2>
+          <p>Os princípios que guiam nosso trabalho artesanal e definem quem somos.</p>
+        </div>
+
+        <div class="valores-grid">
+          <!-- Primeira Linha (3 Colunas) -->
+          <div class="valor-card reveal">
+            <span class="card-icon">💖</span>
+            <h3>Satisfação do Cliente</h3>
+            <p>Prezamos pelo atendimento acolhedor, qualidade técnica e cumprimento rigoroso dos prazos, garantindo a alegria em cada entrega.</p>
+          </div>
+          <div class="valor-card reveal">
+            <span class="card-icon">🤝</span>
+            <h3>Transparência</h3>
+            <p>Agimos com clareza em todas as etapas, desde a escolha do bordado até o orçamento, mantendo o cliente informado de tudo.</p>
+          </div>
+          <div class="valor-card reveal">
+            <span class="card-icon">🪡</span>
+            <h3>Capricho e Dedicação</h3>
+            <p>Entregamos o que prometemos com rigor e carinho nos mínimos detalhes, honrando a confiança depositada em nosso trabalho.</p>
+          </div>
+
+          <!-- Segunda Linha: Coluna 1 vazia, Coluna 2 com Excelência Artesanal -->
+          <div class="empty-cell"></div>
+          <div class="valor-card reveal">
+            <span class="card-icon">⭐</span>
+            <h3>Excelência Artesanal</h3>
+            <p>Cada peça recebe total atenção e cuidado, evitando falhas e dedicando o máximo de empenho para um acabamento perfeito.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">A Arte de Borda</div>
+          <p class="footer-text">Bordados personalizados feitos com cuidado em cada detalhe.</p>
+        </div>
+        <div>
+          <div class="footer-title">Navegação</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="duvidas.html">Dúvidas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">Contato</div>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/qr/4AI5QYM6GJARD1" target="_blank">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/_aartedeborda/" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 — A Arte de Borda. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+  <a class="floating-whatsapp" href="https://wa.me/qr/4AI5QYM6GJARD1" target="_blank">✆</a>
+  <script src="js/main.js"></script>
+</body>
+</html>

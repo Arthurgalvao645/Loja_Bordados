@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Bordados personalizados feitos com cuidado em cada detalhe.">
+  <title>A Arte de Borda | Início</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero-bg {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      background-image: url('images/1inicio.jfif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 80px 20px;
+      color: #ffffff;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .hero-bg .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 650px;
+    }
+    .hero-bg h1, .hero-bg p, .hero-bg .eyebrow {
+      color: #ffffff;
+    }
+    .image-card video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: inherit;
+    }
+
+    /* Estilos para a nova seção "Por que nos escolher" */
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .feature-icon {
+      font-size: 1.8rem;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .feature-text h3 {
+      font-size: 1.15rem;
+      color: #2b2b2b;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .feature-text p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .machine-card img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html">
+        <img src="images/Logo.jpg" alt="A Arte de Borda">
+      </a>
+      <button class="menu-toggle">☰</button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a class="active" href="index.html">Início</a></li>
+          <li><a class="" href="sobre.html">Sobre</a></li>
+          <li><a class="" href="portfolio.html">Portfólio</a></li>
+          <li><a class="" href="duvidas.html">Dúvidas</a></li>
+          <li><a class="" href="contato.html">Contato</a></li>
+          <li><a class="btn btn-primary" href="contato.html">Solicitar orçamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Bordados personalizados</span>
+          <h1>Bordados que transformam peças em algo único</h1>
+          <p>Personalizamos cada detalhe para criar peças que combinam com você, sua marca ou aquele momento especial.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contato.html">Solicitar orçamento</a>
+            <a class="btn btn-outline" href="portfolio.html">Conhecer nosso trabalho</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-columns">
+        <div class="content-block reveal">
+          <span class="eyebrow">Nosso trabalho</span>
+          <h2>Bordados feitos para você</h2>
+          <p>Cada pedido é único, e acreditamos que o bordado deve acompanhar essa ideia.</p>
+          <p>Trabalhamos com bordados personalizados para diferentes tipos de peças, sempre buscando entender o que cada cliente deseja antes de iniciar a produção.</p>
+          <p>De enxovais e peças infantis a roupas, uniformes e itens para cama, mesa e banho, transformamos ideias e referências em trabalhos personalizados.</p>
+          <br>
+          <a class="btn btn-primary" href="sobre.html">Conheça nossa história</a>
+        </div>
+        <div class="image-card reveal">
+          <video autoplay loop muted playsinline>
+            <source src="images/2inicio.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Possibilidades</span>
+          <h2>O que podemos personalizar</h2>
+          <p>Do dia a dia aos momentos especiais, cada peça pode ganhar um toque único.</p>
+        </div>
+        <div class="category-grid">
+          <article class="category-card reveal">
+            <span class="category-number">01</span>
+            <h3>Enxovais e Cama, Mesa e Banho</h3>
+            <p>Toalhas, lençóis, fronhas, roupões e outras peças.</p>
+          </article>
+          <article class="category-card reveal">
+            <span class="category-number">02</span>
+            <h3>Moda e Vestuário</h3>
+            <p>Camisetas, polos, jalecos, bonés e uniformes.</p>
+          </article>
+          <article class="category-card reveal">
+            <span class="category-number">03</span>
+            <h3>Linha Infantil</h3>
+            <p>Bodies, mantas, mochilas e lembranças.</p>
+          </article>
+          <article class="category-card reveal">
+            <span class="category-number">04</span>
+            <h3>Peças Personalizadas</h3>
+            <p>Projetos para autocuidado, conforto, presentes e outras ideias.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Como funciona</span>
+          <h2>Do seu pedido ao bordado</h2>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <div class="process-number">01</div>
+            <h3>Conte sua ideia</h3>
+            <p>Explique o que você deseja ou envie uma referência.</p>
+          </article>
+          <article class="process-card reveal">
+            <div class="process-number">02</div>
+            <h3>Solicite seu orçamento</h3>
+            <p>Recebemos as informações e avaliamos o projeto.</p>
+          </article>
+          <article class="process-card reveal">
+            <div class="process-number">03</div>
+            <h3>Definimos os detalhes</h3>
+            <p>Alinhamos peça, quantidade, cores e detalhes.</p>
+          </article>
+          <article class="process-card reveal">
+            <div class="process-number">04</div>
+            <h3>Seu bordado ganha vida</h3>
+            <p>Produzimos sua peça com atenção.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SUBSTUINDO O PORTFÓLIO DO FINAL -->
+    <section class="section section-alt">
+      <div class="container two-columns">
+        <div class="content-block reveal">
+          <span class="eyebrow">POR QUE NOS ESCOLHER?</span>
+          <h2>Excelência em Bordado que Faz a Diferença</h2>
+          
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="feature-icon">💛</span>
+              <div class="feature-text">
+                <h3>Qualidade profissional em bordados personalizados</h3>
+                <p>Oferecemos bordados computadorizados com alta precisão, garantindo que sua imagem, logomarca ou design fique exatamente como idealizado, com acabamento impecável em cada peça.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <span class="feature-icon">👍</span>
+              <div class="feature-text">
+                <h3>Cuidado artesanal com tecnologia moderna</h3>
+                <p>A Arte de Borda une a delicadeza do bordado artesanal com equipamentos modernos para entregar o melhor resultado e durabilidade em cada ponto.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <span class="feature-icon">👑</span>
+              <div class="feature-text">
+                <h3>Atendimento sob medida para todos os públicos</h3>
+                <p>Atendemos pessoas físicas e pedidos personalizados com soluções sob medida, flexibilidade de prazos e dedicação em cada projeto.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <span class="feature-icon">✨</span>
+              <div class="feature-text">
+                <h3>Praticidade e atendimento humanizado</h3>
+                <p>Oferecemos suporte em todas as etapas, desde a escolha da peça e criação do bordado até o envio prático e seguro do seu pedido.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="machine-card reveal">
+          <img src="images/maquina.webp" alt="Máquina de bordado computadorizado">
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Tem uma ideia em mente?</h2>
+          <p>Conte para nós o que você precisa e solicite um orçamento.</p>
+        </div>
+        <a class="btn btn-light" href="contato.html">Solicitar orçamento</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">A Arte de Borda</div>
+          <p class="footer-text">Bordados personalizados feitos com cuidado em cada detalhe.</p>
+        </div>
+        <div>
+          <div class="footer-title">Navegação</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="duvidas.html">Dúvidas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">Contato</div>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/qr/4AI5QYM6GJARD1" target="_blank">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/_aartedeborda/" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 — A Arte de Borda. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+  <a class="floating-whatsapp" href="https://wa.me/qr/4AI5QYM6GJARD1" target="_blank">✆</a>
+  <script src="js/main.js"></script>
+</body>
+</html>
