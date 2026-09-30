@@ -1,0 +1,1 @@
+document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.portfolio-item').forEach(i=>i.style.display=f==='todos'||i.dataset.category===f?'':'none')}));
