@@ -55,7 +55,7 @@ h3 { font-size: 1.45rem; }
 .menu-toggle { display: none; border: 0; background: transparent; font-size: 1.7rem; cursor: pointer; }
 .floating-whatsapp { position: fixed; right: 22px; bottom: 22px; z-index: 900; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; background: #25d366; color: #fff; font-size: 1.45rem; box-shadow: 0 8px 25px rgba(0,0,0,.16); }
 
-/* Banner com imagem Fundo.jfif */
+/* Banner com imagem de Fundo */
 .page-hero {
   position: relative;
   background-image: url('../images/Fundo.jfif');
