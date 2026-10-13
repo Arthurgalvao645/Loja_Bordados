@@ -1,55 +1,56 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // 1. Controle do menu mobile
+  // MENU MOBILE
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".nav-menu");
 
   if (menuToggle && navMenu) {
     menuToggle.addEventListener("click", function () {
-      navMenu.classList.toggle("active");
+      navMenu.classList.toggle("open");
+      document.body.classList.toggle("menu-aberto");
     });
   }
 
-  // 2. Animação de aparição ao rolar a página (Scroll Reveal)
+  // DÚVIDAS / FAQ (ACORDION QUE ABRE E FECHA)
+  const faqQuestions = document.querySelectorAll(".faq-question");
+
+  faqQuestions.forEach((button) => {
+    button.addEventListener("click", function () {
+      const faqItem = this.closest(".faq-item");
+      
+      // Fecha os outros itens que estiverem abertos
+      document.querySelectorAll(".faq-item").forEach((item) => {
+        if (item !== faqItem) {
+          item.classList.remove("open");
+          const ans = item.querySelector(".faq-answer");
+          if (ans) ans.style.maxHeight = null;
+        }
+      });
+
+      // Alterna o estado do item clicado
+      faqItem.classList.toggle("open");
+      const answer = faqItem.querySelector(".faq-answer");
+
+      if (faqItem.classList.contains("open")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
+
+  // ANIMAÇÃO SCROLL REVEAL
   const reveals = document.querySelectorAll(".reveal");
 
-  function checkReveal() {
+  function revealOnScroll() {
     const windowHeight = window.innerHeight;
-    const revealPoint = 100; // Distância do topo para disparar o efeito
-
     reveals.forEach((element) => {
-      const revealTop = element.getBoundingClientRect().top;
-
-      if (revealTop < windowHeight - revealPoint) {
-        element.classList.add("active");
+      const elementTop = element.getBoundingClientRect().top;
+      if (elementTop < windowHeight - 50) {
+        element.classList.add("visible");
       }
     });
   }
 
-  // Executa na abertura e ao rolar a tela
-  window.addEventListener("scroll", checkReveal);
-  checkReveal();
-
-  // 3. Integração do Formulário de Contato com o WhatsApp
-  const form = document.getElementById("orcamento-form");
-
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const nome = form.querySelector('[name="nome"]').value.trim();
-      const whatsapp = form.querySelector('[name="whatsapp"]').value.trim();
-      const tipo = form.querySelector('[name="tipo"]').value;
-      const quantidade = form.querySelector('[name="quantidade"]').value.trim();
-      const mensagem = form.querySelector('[name="mensagem"]').value.trim();
-
-      const numeroEmpresa = "qr/4AI5QYM6GJARD1";
-
-      const textoMensagem = `Olá!! me chamo ${nome}, tenho interesse em ${quantidade} do(a) ${tipo}.\n\n${mensagem}\n\nEsse é o meu contato ${whatsapp}`;
-
-      const textoCodificado = encodeURIComponent(textoMensagem);
-      const urlWhatsapp = `https://wa.me/${numeroEmpresa}?text=${textoCodificado}`;
-
-      window.open(urlWhatsapp, "_blank");
-    });
-  }
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll(); // Executa ao carregar a página
 });
