@@ -124,48 +124,4 @@ h3 { font-size: 1.35rem; }
 
 /* CTA E RODAPÉ */
 .cta { padding: 60px 0; background: var(--cor-principal); }
-.cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-.site-footer { padding: 50px 0 20px; background: #1f343b; color: #fff; }
-.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; padding-bottom: 30px; }
-.footer-logo { font: 1.5rem "Playfair Display", serif; font-weight: bold; }
-.footer-text, .footer-links { color: #c7d5d9; }
-.footer-text { margin-top: 10px; max-width: 350px; }
-.footer-title { margin-bottom: 12px; font-weight: 700; }
-.footer-links { list-style: none; display: grid; gap: 8px; }
-.footer-bottom { padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); color: #aebfc4; font-size: .85rem; text-align: center; }
-
-/* BOTÃO WHATSAPP FLUTUANTE */
-.floating-whatsapp { position: fixed; right: 20px; bottom: 20px; z-index: 900; width: 52px; height: 52px; display: grid; place-items: center; border-radius: 50%; background: #25d366; color: #fff; font-size: 1.5rem; box-shadow: 0 6px 20px rgba(0,0,0,.2); }
-
-/* ANIMAÇÃO SCROLL REVEAL */
-.reveal { opacity: 0; transform: translateY(25px); transition: opacity 0.6s ease, transform 0.6s ease; }
-.reveal.active, .reveal.visible { opacity: 1; transform: translateY(0); }
-
-/* ===================================================
-   ADAPTAÇÕES PARA TABLET E CELULAR (RESPONSIVIDADE)
-   =================================================== */
-
-@media (max-width: 950px) {
-  .menu-toggle { display: block; }
-  .nav-menu { position: fixed; top: 80px; left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; padding: 25px 20px; background: #fff; box-shadow: var(--sombra); gap: 18px; }
-  .nav-menu.open, .nav-menu.active { display: flex; }
-  .navbar > .btn { display: none; }
-  
-  .two-columns, .contact-grid { grid-template-columns: 1fr; gap: 35px; }
-  .category-grid, .process-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: 1fr; gap: 30px; }
-}
-
-@media (max-width: 600px) {
-  .container { width: min(100% - 32px, var(--largura)); }
-  .section { padding: 50px 0; }
-  .page-hero { padding: 70px 0 55px; }
-  .logo img { height: 60px; }
-  
-  .category-grid, .process-grid, .form-grid { grid-template-columns: 1fr; }
-  .portfolio-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
-  
-  .cta-inner { flex-direction: column; align-items: flex-start; text-align: left; }
-  .contact-form { padding: 20px; }
-  .floating-whatsapp { width: 46px; height: 46px; font-size: 1.3rem; right: 15px; bottom: 15px; }
-}
+.cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px
