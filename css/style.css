@@ -141,7 +141,10 @@ h3 { font-size: 1.35rem; }
 .reveal { opacity: 0; transform: translateY(25px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.active, .reveal.visible { opacity: 1; transform: translateY(0); }
 
-/* RESPONSIVIDADE */
+/* ===================================================
+   ADAPTAÇÕES PARA TABLET E CELULAR (RESPONSIVIDADE)
+   =================================================== */
+
 @media (max-width: 950px) {
   .menu-toggle { display: block; }
   .nav-menu { position: fixed; top: 80px; left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; padding: 25px 20px; background: #fff; box-shadow: var(--sombra); gap: 18px; }
