@@ -44,46 +44,41 @@
       border-radius: inherit;
     }
 
-    /* Estilos para a nova seção "Por que nos escolher" */
     .feature-list {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
       margin-top: 30px;
     }
 
     .feature-item {
       display: flex;
-      gap: 20px;
+      gap: 15px;
       align-items: flex-start;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid var(--cor-borda);
     }
 
     .feature-icon {
       font-size: 1.8rem;
       line-height: 1;
       flex-shrink: 0;
-      margin-top: 3px;
     }
 
     .feature-text h3 {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       color: #2b2b2b;
       margin-bottom: 5px;
       font-weight: bold;
     }
 
     .feature-text p {
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       color: #666;
       line-height: 1.5;
       margin: 0;
-    }
-
-    .machine-card img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      display: block;
     }
   </style>
 </head>
@@ -113,7 +108,7 @@
         <div class="hero-copy reveal">
           <span class="eyebrow">Bordados personalizados</span>
           <h1>Bordados que transformam peças em algo único</h1>
-          <p>Personalizamos cada detalhe para criar peças que combinam com você, sua marca ou aquele momento especial.</p>
+          <p>Personalizamos cada detalhe para criar peças que combinam com você, sua casa ou aquele momento especial.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="contato.html">Solicitar orçamento</a>
             <a class="btn btn-outline" href="portfolio.html">Conhecer nosso trabalho</a>
@@ -129,7 +124,7 @@
           <h2>Bordados feitos para você</h2>
           <p>Cada pedido é único, e acreditamos que o bordado deve acompanhar essa ideia.</p>
           <p>Trabalhamos com bordados personalizados para diferentes tipos de peças, sempre buscando entender o que cada cliente deseja antes de iniciar a produção.</p>
-          <p>De enxovais e peças infantis a roupas, uniformes e itens para cama, mesa e banho, transformamos ideias e referências em trabalhos personalizados.</p>
+          <p>De enxovais e peças infantis a itens para cama, mesa e banho, transformamos ideias e referências em trabalhos personalizados com acabamento delicado.</p>
           <br>
           <a class="btn btn-primary" href="sobre.html">Conheça nossa história</a>
         </div>
@@ -152,22 +147,22 @@
           <article class="category-card reveal">
             <span class="category-number">01</span>
             <h3>Enxovais e Cama, Mesa e Banho</h3>
-            <p>Toalhas, lençóis, fronhas, roupões e outras peças.</p>
+            <p>Toalhas, lençóis, fronhas, roupões e peças afetivas.</p>
           </article>
           <article class="category-card reveal">
             <span class="category-number">02</span>
             <h3>Moda e Vestuário</h3>
-            <p>Camisetas, polos, jalecos, bonés e uniformes.</p>
+            <p>Camisetas, jalecos, capas e peças sob medida.</p>
           </article>
           <article class="category-card reveal">
             <span class="category-number">03</span>
             <h3>Linha Infantil</h3>
-            <p>Bodies, mantas, mochilas e lembranças.</p>
+            <p>Bodies, mantas, mochilas e lembranças de maternidade.</p>
           </article>
           <article class="category-card reveal">
             <span class="category-number">04</span>
             <h3>Peças Personalizadas</h3>
-            <p>Projetos para autocuidado, conforto, presentes e outras ideias.</p>
+            <p>Projetos para autocuidado, conforto, presentes e datas comemorativas.</p>
           </article>
         </div>
       </div>
@@ -193,61 +188,57 @@
           <article class="process-card reveal">
             <div class="process-number">03</div>
             <h3>Definimos os detalhes</h3>
-            <p>Alinhamos peça, quantidade, cores e detalhes.</p>
+            <p>Alinhamos peça, quantidade, cores e detalhes do bordado.</p>
           </article>
           <article class="process-card reveal">
             <div class="process-number">04</div>
             <h3>Seu bordado ganha vida</h3>
-            <p>Produzimos sua peça com atenção.</p>
+            <p>Produzimos sua peça com atenção e carinho.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- SEÇÃO SUBSTUINDO O PORTFÓLIO DO FINAL -->
+    <!-- SEÇÃO POR QUE NOS ESCOLHER (SEM A MÁQUINA) -->
     <section class="section section-alt">
-      <div class="container two-columns">
-        <div class="content-block reveal">
+      <div class="container">
+        <div class="section-header reveal">
           <span class="eyebrow">POR QUE NOS ESCOLHER?</span>
           <h2>Excelência em Bordado que Faz a Diferença</h2>
-          
-          <div class="feature-list">
-            <div class="feature-item">
-              <span class="feature-icon">💛</span>
-              <div class="feature-text">
-                <h3>Qualidade profissional em bordados personalizados</h3>
-                <p>Oferecemos bordados computadorizados com alta precisão, garantindo que sua imagem, logomarca ou design fique exatamente como idealizado, com acabamento impecável em cada peça.</p>
-              </div>
-            </div>
-
-            <div class="feature-item">
-              <span class="feature-icon">👍</span>
-              <div class="feature-text">
-                <h3>Cuidado artesanal com tecnologia moderna</h3>
-                <p>A Arte de Borda une a delicadeza do bordado artesanal com equipamentos modernos para entregar o melhor resultado e durabilidade em cada ponto.</p>
-              </div>
-            </div>
-
-            <div class="feature-item">
-              <span class="feature-icon">👑</span>
-              <div class="feature-text">
-                <h3>Atendimento sob medida para todos os públicos</h3>
-                <p>Atendemos pessoas físicas e pedidos personalizados com soluções sob medida, flexibilidade de prazos e dedicação em cada projeto.</p>
-              </div>
-            </div>
-
-            <div class="feature-item">
-              <span class="feature-icon">✨</span>
-              <div class="feature-text">
-                <h3>Praticidade e atendimento humanizado</h3>
-                <p>Oferecemos suporte em todas as etapas, desde a escolha da peça e criação do bordado até o envio prático e seguro do seu pedido.</p>
-              </div>
+        </div>
+        
+        <div class="feature-list reveal">
+          <div class="feature-item">
+            <span class="feature-icon">💖</span>
+            <div class="feature-text">
+              <h3>Qualidade em bordados personalizados</h3>
+              <p>Oferecemos bordados computadorizados com alta precisão, garantindo que sua ideia ou design fique exatamente como idealizado, com acabamento impecável.</p>
             </div>
           </div>
-        </div>
 
-        <div class="machine-card reveal">
-          <img src="images/maquina.webp" alt="Máquina de bordado computadorizado">
+          <div class="feature-item">
+            <span class="feature-icon">🪡</span>
+            <div class="feature-text">
+              <h3>Cuidado artesanal com tecnologia moderna</h3>
+              <p>A Arte de Borda une a delicadeza do bordado artesanal com equipamentos modernos para entregar o melhor resultado e durabilidade em cada ponto.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span class="feature-icon">⭐</span>
+            <div class="feature-text">
+              <h3>Atendimento sob medida</h3>
+              <p>Atendemos pedidos individuais e peças especiais com soluções sob medida, flexibilidade de prazos e dedicação em cada projeto.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span class="feature-icon">✨</span>
+            <div class="feature-text">
+              <h3>Praticidade e carinho</h3>
+              <p>Oferecemos suporte em todas as etapas, desde a escolha da peça e criação do bordado até a entrega prática e segura do seu pedido.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -291,7 +282,17 @@
       <div class="footer-bottom">© 2026 — A Arte de Borda. Todos os direitos reservados.</div>
     </div>
   </footer>
-  <a class="floating-whatsapp" href="https://wa.me/qr/4AI5QYM6GJARD1" target="_blank">✆</a>
+
+  <!-- BOTÕES FLUTUANTES (INSTAGRAM + WHATSAPP) -->
+  <div class="floating-socials">
+    <a class="floating-btn floating-instagram" href="https://www.instagram.com/_aartedeborda/" target="_blank" title="Siga no Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.999 0h.001zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </svg>
+    </a>
+    <a class="floating-btn floating-whatsapp" href="https://wa.me/qr/4AI5QYM6GJARD1" target="_blank" title="Chamar no WhatsApp">✆</a>
+  </div>
+
   <script src="js/main.js"></script>
 </body>
 </html>
