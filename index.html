@@ -48,7 +48,7 @@
       border-radius: 12px;
       border: 1px solid var(--cor-borda);
     }
-    .feature-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .feature-icon { font-size: 1.8rem; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
     .feature-text h3 { font-size: 1.1rem; color: #2b2b2b; margin-bottom: 5px; font-weight: bold; }
     .feature-text p { font-size: 0.92rem; color: #666; margin: 0; }
   </style>
@@ -99,10 +99,15 @@
           <br>
           <a class="btn btn-primary" href="sobre.html">Conheça nossa história</a>
         </div>
-        <div class="image-card reveal">
+        
+        <!-- VÍDEO QUE ABRE O PLAYER FLUTUANTE -->
+        <div class="image-card video-trigger reveal" id="openVideoModal">
           <video autoplay loop muted playsinline>
             <source src="images/2inicio.mp4" type="video/mp4">
           </video>
+          <div class="video-overlay-hint">
+            <span>🔍 Clique para ampliar</span>
+          </div>
         </div>
       </div>
     </section>
@@ -186,7 +191,12 @@
             </div>
           </div>
           <div class="feature-item">
-            <span class="feature-icon">🪡</span>
+            <span class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#579bb8" viewBox="0 0 16 16">
+                <path d="M6.8 1.15a1.2 1.2 0 0 1 1.7 0l6.35 6.35a1.2 1.2 0 0 1 0 1.7l-2.47 2.47a1.2 1.2 0 0 1-1.7 0L4.33 5.32 1.52 8.13a.5.5 0 0 1-.71-.71l3.17-3.17 2.82-3.1zm1 1a.2.2 0 0 0-.28 0L2.34 7.33l1.83 1.83 4.82-4.82a.2.2 0 0 0 0-.28L7.8 2.15z"/>
+                <path d="M1.5 14.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </span>
             <div class="feature-text">
               <h3>Cuidado artesanal com tecnologia moderna</h3>
               <p>Unimos a delicadeza do bordado artesanal com equipamentos modernos para entregar o melhor resultado em cada ponto.</p>
@@ -250,6 +260,7 @@
     </div>
   </footer>
 
+  <!-- BOTÕES FLUTUANTES SOCIAIS -->
   <div class="floating-socials">
     <a class="floating-btn floating-instagram" href="https://www.instagram.com/_aartedeborda/" target="_blank" title="Siga no Instagram">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
@@ -257,6 +268,17 @@
       </svg>
     </a>
     <a class="floating-btn floating-whatsapp" href="https://wa.me/qr/4AI5QYM6GJARD1" target="_blank" title="Chamar no WhatsApp">✆</a>
+  </div>
+
+  <!-- MODAL / PLAYER FLUTUANTE DE VÍDEO -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-backdrop" id="closeVideoModalBackdrop"></div>
+    <div class="video-modal-content">
+      <button class="video-modal-close" id="closeVideoModal">&times;</button>
+      <video id="modalPlayer" controls playsinline>
+        <source src="images/2inicio.mp4" type="video/mp4">
+      </video>
+    </div>
   </div>
 
   <script src="js/main.js"></script>
