@@ -169,7 +169,96 @@ h3 { font-size: 1.35rem; }
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
 }
 
-/* ANIMAÇÕES */
+/* VÍDEO COM JANELA FLUTUANTE */
+.video-trigger {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-overlay-hint {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.video-overlay-hint span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+.video-trigger:hover .video-overlay-hint {
+  opacity: 1;
+}
+
+/* MODAL / JANELA FLUTUANTE DO VÍDEO */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.video-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(6px);
+}
+
+.video-modal-content {
+  position: relative;
+  z-index: 2;
+  width: min(92vw, 850px);
+  max-height: 85vh;
+  background: #000;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.video-modal-content video {
+  width: 100%;
+  max-height: 75vh;
+  display: block;
+}
+
+.video-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+/* ANIMAÇÕES EXATAS DO SEU CÓDIGO */
 .reveal { opacity: 0; transform: translateY(25px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.active, .reveal.visible { opacity: 1; transform: translateY(0); }
 
@@ -194,4 +283,9 @@ h3 { font-size: 1.35rem; }
   .category-grid, .process-grid, .form-grid { grid-template-columns: 1fr; }
   .portfolio-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
   
-  .cta-inner { flex-direction: column; align-items: flex-start; text-align:
+  .cta-inner { flex-direction: column; align-items: flex-start; text-align: left; }
+  .contact-form { padding: 20px; }
+  
+  .floating-socials { right: 15px; bottom: 15px; gap: 10px; }
+  .floating-btn { width: 46px; height: 46px; font-size: 1.3rem; }
+}
